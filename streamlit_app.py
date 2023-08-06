@@ -47,3 +47,9 @@ def generate_llama2_response(prompt_input):
                                   "temperature":0.1, "top_p":0.9, "max_length":512, "repetition_penalty":1})
     return output
 
+# User-provided prompt
+if prompt := st.chat_input(disabled=not replicate_api):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.write(prompt)
+
