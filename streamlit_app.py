@@ -2,6 +2,6 @@ import streamlit as st
 import replicate
 import os
 
-st.title('🎈 App Name')
+st.title('🦙💬 Llama 2 Chatbot')
 
 st.write('Hello world!')
